@@ -575,6 +575,7 @@ img {
 .works-btn:hover {
   color: #ffffff;
   background: #404bbf;
+  border: 1px solid #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -591,6 +592,7 @@ img {
 
 .works-img-item {
   width: calc((100% - 48px) / 3);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .works-link {
@@ -598,25 +600,26 @@ img {
 }
 
 .works-card {
-
-
 }
 
 .works-card-container {
   max-width: 360px;
   padding: 32px 16px;
-  border: 1px solid #E7E9FC;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  border: 1px solid #e7e9fc;
   border-top: transparent;
-  
 }
 
-.works-card-container:hover,
-.works-card-container:focus {
-  border: 0.5px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.works-img-item:hover .works-card-container {
+  border: 1px solid #f4f4fd;
+  border-top: transparent;
 }
-  
+
+.works-img-item:hover,
+.works-img-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .works-text {
   font-weight: var(--dominant-font-weight);
   font-size: 20px;
